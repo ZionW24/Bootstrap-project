@@ -1,11 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Bootstrap 5 Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  </head>
+
+<head>
+  <title>Bootstrap 5 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+
 </html>
-<h1>SERAPHINE</h1>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+
+
+
+
+  .image {
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+  }
+
+  .image>img {
+    width: 100%;
+  }
+
+  .text {
+    font-size: 140px;
+    position: absolute;
+
+    letter-spacing: 0.03em;
+    font-weight: bolder;
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    text-shadow: 3px 3px #ffffff;
+    color: rgba(156, 214, 255, 0.551);
+    text-align: center;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .headers {
+    color: white;
+  }
+
+  .pr {
+
+    color: rgb(255, 255, 255);
+    padding: 2%;
+    /*border-style: solid;*/
+    border-radius: 2%;
+    /*border: solid;*/
+
+
+    color: rgb(43, 1, 50);
+    border-style: solid;
+    border-color: rgb(0, 37, 89);
+    margin: 2%;
+    background-color: rgba(255, 255, 255, 0.612);
+
+    /*box-shadow: rgba(137, 46, 240, 0.4) -5px 5px, rgba(162, 46, 240, 0.3) -10px 10px, rgba(162, 46, 240, 0.2) -15px 15px,
+rgba(201, 46, 240, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;*/
+    font-family: 'ubuntu';
+    font-size: 150%;
+    font-weight: bolder;
+    text-align: center;
+    font-style: normal;
+  }
+
+  .pr2 {
+
+
+
+    /*box-shadow: rgba(137, 46, 240, 0.4) -5px 5px, rgba(162, 46, 240, 0.3) -10px 10px, rgba(162, 46, 240, 0.2) -15px 15px,
+rgba(201, 46, 240, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;*/
+    font-family: 'ubuntu';
+    padding: 2%;
+    font-size: 150%;
+    font-weight: bolder;
+    text-align: left;
+
+    font-style: normal;
+  }
+
+  .borrder {
+    color: rgb(255, 255, 255);
+    padding: 2%;
+    /*border-style: solid;*/
+    border-radius: 2%;
+    /*border: solid;*/
+
+    color: rgb(255, 255, 255);
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    margin: 2%;
+    background-color: rgba(0, 0, 0, 0.185);
+  }
+
+  .img {
+    width: 50%;
+    float: left;
+    padding: 2%;
+
+  }
+
+  .vid {
+    padding-left: 5%;
+    width: 100%;
+    height: 70%;
+
+  }
+  .img {
+    width: 50%;
+    float: left;
+    padding: 2%;
+
+  }
+
+  .vid {
+    padding-left: 5%;
+    width: 100%;
+    height: 70%;
+  }
+  .links {
+    margin-top: 10px;
+    font-size: 2.5rem;
+    font-family: 'oswald';
+    margin-bottom: 10px;
+  
+    
+  }
+
+  .links>a {
+    text-decoration: underline 1px transparent;
+    color: rgb(0, 0, 0);
+    margin-right: 60px;
+    padding-top: 10px;
+    text-underline-offset: 3px;
+  }
+
+  .links>a:hover {
+    text-decoration: underline 3px rgb(127, 68, 200);
+    
+    margin-right: 60px;
+    padding-top: 10px;
+    transition:0.5s;
+  }
+
+  .socials> a:hover{
+      transition: 0.5s;
+      transform: scale(1.3)
+    }
+    i{
+      color:white;
+      text-decoration:none;
+    }
+  .active {
+    text-decoration: underline 3px rgb(127, 68, 200)!important;
+
+  }
+  
+  .navLogo {
+    width: 9vw;
+    height: 6vh;
+    margin-top: 12px;
+    margin-left: 30px;
+
+  }
+
+  .nav {
+    position: absolute;
+    z-index: 900;
+    top: 0%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    height: 8.7%;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+</style>
+<div class="nav">
+  <img class="navLogo" src="kdaLogo2.png">
+  <div class="links">
+    <a href="index.html">
+      Home
+    </a>
+    <a href="kaisa.html">
+      Kaisa
+    </a><a href="akali.html">
+      Akali
+    </a><a href="ahri.html">
+      Ahri
+    </a><a href="evelynn.html">
+      Evelynn
+    </a>
+    <a class="active"  href="seraphine.html">
+      Seraphine
+    </a>
+  </div>
+</div>
+<body
+  style="background-image: linear-gradient(to right top, #d16ba5, #c777b9, #f59bff, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);">
+</body>
+<div class="image">
+  
+  <div class="text"><img class ="text"src="SERAPHINE.svg" style="width: 70vw!important; margin-right: auto; margin-left:auto ;"> </div>
+  <img src="seraphine.jpg">
+
+</div>
+<br><br>
+<hr>
+</style>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="headers">About</h1>
+      <p class="pr"> Seraphine is a girl that started off on social media posting her song covers online. She did this
+        for a very long time until she was discovered by Kpop start and now group member Ahri. Where she was asked to
+        collab with the group KDA.
+        Seraphine was just a collab witht the girls of KDA. In the regular League of legends Universe she is played as a
+        mage/support, with
+        a bright and bubbly personality. She is known for her love of singing.</p>
+
+    </div>
+    <div class="col-6 border-end">
+
+      <h1 class="headers">
+        Position in Group
+
+      </h1>
+      <p class="pr">
+        Main Vocalist
+      </p>
+    </div>
+
+    <div class="col-6">
+      <h1 class="headers">
+        Roles in Game
+
+      </h1>
+      <p class="pr">
+        Support/Mage
+      </p>
+    </div>
+
+    <div style="height: 5%" class="col-6 ">
+      <br>
+      <h1 class="headers">
+        Voice Actor
+
+      </h1>
+
+      <p class="pr">
+        Lexie Liu
+      </p>
+      <div style="width: 100%;" class="col-lg-6">
+        <div class="borrder">
+          <p class="pr2"><img src="lexi.jpg" alt="Pineapple" class="img">
+            Lexie Liu is a Chinese singer.In February 2019, Liu released her debut EP 2030 in the United States with
+            eight singles including Outta Time featuring Killy, Love and Run, Hat Trick, and Nada. She also
+            participated in the song of K/DA MORE as Seraphine's voice.
+
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <div class="col-6">
+      <h1 class="headers">
+        Project
+      </h1>
+      <p class="pr"> yt link</p>
+      <iframe class="vid" width="560" height="315" src="https://www.youtube.com/embed/3VTkBuxU4yk"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+
+    </div>
+    <br><br><br><br><br><br>
+
+  </div>
+</div>
+<footer
+class="text-center text-white"
+style="background-image: url('kda_logo.jpeg'); background-color: #000000"
+>
+<!-- Copyright -->
+<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+  © 2020 Copyright:
+  <a
+    class="text-white"
+    href="https://www.leagueoflegends.com/en-us/event/kda-official-fan-club/"
+    >KDA.com</a
+  >
+  <div class="socials">
+  
+    <div class="fa-stack fa-lg">
+      <a href="https://twitter.com/kda_music?lang=en">
+      <i class="fa fa-circle-thin fa-stack-2x"></i>
+      <i class="fa fa-twitter fa-stack-1x"></i>
+    </a>
+    </div>
+  
+  
+  <div class="fa-stack fa-lg">
+    <a href="https://www.youtube.com/c/leagueoflegends">
+    <i class="fa fa-circle-thin fa-stack-2x"></i>
+    <i class="fa fa-youtube fa-stack-1x"></i></a>
+  </div>
+  </div>
+</div>
+<!-- Copyright -->
+</footer>
+
+
+
+
+
+
+
+</body>
+
+</html>
